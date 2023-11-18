@@ -29,13 +29,14 @@ def main():
 
     # Kruskal's Algorithm
     kruskal_mst = KruskalMST(graph)
-    kruskal_edges = kruskal_mst.find_mst()
-    print("Kruskal's MST:", kruskal_edges)
+    print("Kruskal's MST:", kruskal_mst.find_mst())
+    kruskal_mst.draw_mst()
 
     # Prim's Algorithm
     prim_mst = PrimMST(graph)
-    prim_edges = prim_mst.find_mst()
-    print("Prim's MST:", prim_edges)
+    print("Prim's MST:", prim_mst.find_mst())
+    prim_mst.draw_mst()
 
 if __name__ == "__main__":
+
     main()
